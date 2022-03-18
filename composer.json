@@ -1,0 +1,55 @@
+{
+    "name": "vswteam/laravel-change-password",
+    "description": "A Laravel package to change user password",
+    "keywords": [
+        "vswteam",
+        "laravel-change-password"
+    ],
+    "homepage": "https://github.com/vswteam/laravel-change-password",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nox Wang",
+            "homepage": "https://github.com/nox0121",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "^7.3|^8.0|^8.1",
+        "illuminate/auth": "^6.0|^7.0|^8.0|^9.0",
+        "illuminate/container": "^6.0|^7.0|^8.0|^9.0",
+        "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0",
+        "illuminate/database": "^6.0|^7.0|^8.0|^9.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0|^6.0|^7.0",
+        "phpunit/phpunit": "^9.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vswteam\\LaravelChangePassword\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vswteam\\LaravelChangePassword\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vswteam\\LaravelChangePassword\\LaravelChangePasswordServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
