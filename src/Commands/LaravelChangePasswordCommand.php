@@ -31,7 +31,7 @@ class LaravelChangePasswordCommand extends Command
     public function handle()
     {
         $account = $this->argument('account');
-        $password =  $this->argument('password');
+        $password = $this->argument('password');
 
         try {
             $this->handler->handle($account, $password);
